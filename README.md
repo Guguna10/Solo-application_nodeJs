@@ -1,6 +1,6 @@
 # Solo-application_nodeJs_handlebars
 
-Node, Express, Handlebars
+Node, Express, Handlebars, MongoDb
 
 
 
