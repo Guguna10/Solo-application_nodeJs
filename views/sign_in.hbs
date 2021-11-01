@@ -1,0 +1,32 @@
+<section style="padding-bottom: 100px;">
+    <div class="container registration-container-2" style="margin-top: 150px;">
+        <div class="row">
+            <div class="col-6 col-sm-6" >
+                <img src="/img/auth_pic.jpg" class="img-box-1" style="height: 100%; width: 100%;" alt="solo-picture">
+            </div>
+            <div id="registration" class="col-6 col-sm-6 " style="text-align: center;">
+                <form action="/" method="POST" class="input-group-lg registration_fm" style="right:15px">
+                    {{#if error}}
+                        <div class="error-flash-contanier">
+                            <p class="error-flash-text" style="color: red;">{{error}}</p>
+                        </div>
+                    {{/if}}
+                    {{#if info}}
+                        <div class="error-flash-contanier">
+                            <p class="error-flash-text" style="color: rgb(3, 233, 3);">{{info}}</p>
+                        </div>
+                    {{/if}}
+                    <div class="form-group col-8 wow fadeInRight input-group-lg" data-wow-duration="2s">
+                        <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="Email" >
+                    </div>
+                    <div class="form-group col-8 wow fadeInRight input-group-lg" data-wow-duration="2.4s">
+                        <input type="password" name="password" class="form-control" id="inputPassword4" placeholder="Password">
+                    </div>
+                    <div class="form-group col-5 wow fadeInRight input-group-lg" data-wow-duration="2.8s">
+                        <button  type="submit" style="display: block; margin:auto; background: #8800E7; color:white; height: 50px; width: 100px; font-size: 19px" class="btn  text-light col-6 registartion-submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

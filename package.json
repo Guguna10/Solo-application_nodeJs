@@ -1,0 +1,31 @@
+{
+  "name": "solo_portfolio_website_with_backend",
+  "version": "1.0.0",
+  "description": "solo webpage with backand: nodeJs mongoDB",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "engines": {
+    "node": "14.15.5"
+  },
+  "author": "Demetre Ghughunishvili",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "chalk": "^4.1.1",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.0",
+    "express-session": "^1.17.1",
+    "moment": "^2.29.1",
+    "mongoose": "^5.12.4",
+    "multer": "^1.4.2",
+    "randombytes": "^2.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

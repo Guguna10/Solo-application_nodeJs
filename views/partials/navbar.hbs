@@ -1,0 +1,89 @@
+<!-- Header -->
+<header>
+  <nav class="navbar navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="site-nav-wrapper">
+        <div class="navbar-header">
+          <!-- Mobile Menu Open Button -->
+          <span id="mobile-nav-open-btn">&#9776;</span>
+          <!-- Logo -->
+          <a class="navbar-brand  smooth-scroll">
+            <img src="/img/logo/logo-dark.png" alt="logo">
+          </a>
+        </div>
+        <!-- Main Menu -->
+        <div class="container">
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav pull-right" style="color: white">
+              {{#if isAuth}}
+                  {{#if isHome}}
+                          <li class="active"><a href="/home" >Home</a></li>
+                    {{else}}
+                          <li><a href="/home" >Home</a></li>
+                    {{/if}}
+
+                    {{#if isAbout}}
+                          <li class="active"><a href="/about">About</a></li>
+                    {{else}}
+                          <li><a href="/about">About</a></li>
+                    {{/if}}
+
+                    {{#if isUsers}}
+                          <li class="active"><a href="/users">users</a></li>
+                    {{else}}
+                          <li><a href="/users">users</a></li>
+                    {{/if}}
+                    
+                    {{#if isTeam}}
+                          <li class="active"><a href="/team">Team</a></li>
+                    {{else}}
+                          <li><a href="/team">Team</a></li>
+                    {{/if}}
+
+                    {{#if isPrise}}
+                          <li class="active"><a href="/prise">Prise</a></li>
+                    {{else}}
+                          <li><a href="/prise">Prise</a></li>
+                    {{/if}}
+                            <li><a href="/logout">Log Out</a></li>
+              {{else}}
+                    {{#if isSign_in}} 
+                        <li class="active"><a href="/">sign-in</a></li>
+                    {{else}}
+                        <li><a href="/">sign-in</a></li>
+                    {{/if}}
+
+                    {{#if isRegistration}} 
+                          <li class="active"><a href="/registration">Registration</a></li>
+                    {{else}}
+                          <li><a href="/registration">Registration</a></li>  
+                    {{/if}} 
+              {{/if}}   
+            </ul>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-nav">
+          <!-- Mobile Menu Close Button -->
+          <span id="mobile-nav-close-btn">&times;</span>
+          <div id="mobile-nav-content">
+            <ul class="nav">
+              {{#if isAuth}}
+                <li><a href="/home">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/team">Team</a></li>
+                <li><a href="/prise">Prise</a></li>
+                <li><a href="/logout">Log Out</a></li>
+              {{else}}
+                <li><a href="/registration">Registration</a></li>
+                <li><a href="/">sign-in</a></li>
+              {{/if}}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- Header Ends -->

@@ -1,0 +1,56 @@
+{{#if userData.length}}
+    <div class="container card-box-1" style="margin-top: 140px; margin-bottom: 50px">
+            <div class="row card-box-3" style=" margin: -100px">
+                {{#each userData}}
+                    <div class="col-md-4" style="padding: 30px;">
+                        <div class="card card-box-2 m-5 p-5 ">
+                            <div class="header">
+                                <a href="#" class="mail">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                                <div class="main">
+                                    <h3 class="name">{{this.first_name}} {{this.last_name}}</h3>
+                                    <h3 class="sub-name">მასწავლებელი</h3>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="left">
+                                    <div class="about-container">
+                                        <h3 class="title">About</h3>
+                                        <h4>ელ ფოსტა: {{this.email}}</h4>
+                                    </div>
+                                    <div class="icons-container">
+                                        <a href="#" class="icon">
+                                            <i class="fab fa-facebook"></i>
+                                        </a>
+                                        <a href="#" class="icon">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                        <a href="#" class="icon">
+                                            <i class="fab fa-google-plus-g"></i>
+                                        </a>
+                                        <a href="#" class="icon">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </div>
+                                    <div class="buttons-wrap">
+                                        <div class="follow-wrap">
+                                            <a href="#" class="follow">Follow</a>
+                                        </div>
+                                        <div class="share-wrap">
+                                            <a href="#" class="share">Share</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                {{/each}}                    
+            </div>
+    </div>
+{{/if}}
+
+
+
+        
+               
